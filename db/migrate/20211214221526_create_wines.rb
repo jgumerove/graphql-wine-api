@@ -3,9 +3,9 @@ class CreateWines < ActiveRecord::Migration[6.1]
     create_table :wines do |t|
       t.string :title
       t.string :type
-      t.integer :price
       t.integer :year
-      t.country :belongs_to
+      t.integer :price
+      t.references :country, null: false, foreign_key: true
 
       t.timestamps
     end
