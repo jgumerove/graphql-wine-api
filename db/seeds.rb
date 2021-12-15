@@ -15,3 +15,4 @@ france.wines.create(title: "French Red", price: 100, wine_category: "Red", year:
 italy.wines.create(title: "Italy Red", price: 110, wine_category: "Red", year: 1978)
 italy.wines.create(title: "Italy Something", price: 88, wine_category: "Pinot", year: 1978)
 germany.wines.create(title: "German Reisling", price: 188, wine_category: "Resiling", year: 1999)
+germany.wines.create(title: "Germany Something", price: 81, wine_category: "Pinot", year: 1954)

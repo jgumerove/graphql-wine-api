@@ -17,6 +17,15 @@ module Types
     def country(id: id)
       Country.find_by(id: id)
     end
+
+    field :find_by_category, [Types::WineType], null: false do
+      description "finds all the wines with a particluar category"
+      argument :wine_category, String, required: true
+    end
+
+    def find_by_category(wine_category: wine_category)
+      Wine.where(wine_category: wine_category)
+    end
     
 
   end
