@@ -4,6 +4,6 @@ module Types
     field :name, String, null: false
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
-    field :wine, [WineType], null: false
+    field :wines, [WineType], null: false
   end
 end
