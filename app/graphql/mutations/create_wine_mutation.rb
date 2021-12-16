@@ -9,6 +9,8 @@ module Mutations
     argument :wine_category, String, required: true
     argument :year, Integer, required: true
 
+    description "creates a new wine"
+
 
     def resolve(title: title, price: price, country_id: country_id, wine_category: wine_category, year: year)
       wine = Wine.new(title: title, price: price, country_id: country_id, wine_category: wine_category, year: year)

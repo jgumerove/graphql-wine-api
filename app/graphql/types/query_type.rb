@@ -9,6 +9,14 @@ module Types
       Country.all
     end
 
+    field :all_Wines, [Types::WineType], null: false do
+      description "displays all wines"
+    end
+
+    def all_Wines
+      Wine.all
+    end
+
     field :country, Types::CountryType, null: false do
       description "Returns details of specific country"
       argument :id, ID, required: true
