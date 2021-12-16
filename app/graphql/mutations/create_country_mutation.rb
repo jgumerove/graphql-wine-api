@@ -11,7 +11,8 @@ module Mutations
       country = Country.new(name: name)
       if country.save
         {
-          country: country
+          country: country,
+          errors: []
         }
       else
         {
