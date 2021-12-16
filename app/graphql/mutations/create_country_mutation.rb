@@ -1,9 +1,11 @@
 module Mutations
   class CreateCountryMutation < BaseMutation
     # TODO: define return fields
-    field :country, Types::CountryType, null: false
+    field :country, Types::CountryType, null: true
     field :errors, [String], null: true
     argument :name, String, required: true
+
+    description "creates a new country"
 
 
     # TODO: define resolve method
