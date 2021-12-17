@@ -15,7 +15,7 @@ module Mutations
       wine = Wine.find(id)
       wine.destroy
       { 
-        id: id,
+        wine: wine,
       }
     end
   end
