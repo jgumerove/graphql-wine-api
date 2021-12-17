@@ -1,6 +1,5 @@
 module Mutations
   class CreateWineMutation < BaseMutation
-    # TODO: define return fields
     field :wine, Types::WineType, null: false
     field :errors, [String], null: true
     argument :title, String, required: true

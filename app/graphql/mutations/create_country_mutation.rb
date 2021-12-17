@@ -8,7 +8,6 @@ module Mutations
     description "creates a new country"
 
 
-    # TODO: define resolve method
     def resolve(name: name)
       country = Country.new(name: name)
       if country.save
